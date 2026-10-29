@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prunksaal Wien – 3D-Tour</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fdfbf7;
+    color: #333;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 { color: #7a5c10; font-size: 2.5rem; margin-bottom: 0.5rem; }
+  .subtitle { color: #666; font-size: 1.1rem; margin-bottom: 2rem; }
+
+  .card {
+    border: 2px solid #b8860b;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+
+  .photo {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 2px solid #b8860b;
+  }
+
+  p { margin-bottom: 1rem; }
+  strong { color: #7a5c10; }
+
+  /* 3D-Tour Button – öffnet im selben Tab */
+  .tour-box {
+    border: 2px solid #b8860b;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .tour-box h2 {
+    color: #7a5c10;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .tour-box p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-tour {
+    display: inline-block;
+    background: #7a5c10;
+    color: #fff;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 24px rgba(122, 92, 16, 0.4);
+    transition: transform 0.2s, background 0.2s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .btn-tour:hover {
+    background: #b8860b;
+    transform: translateY(-2px);
+  }
+
+  .btn-tour:active {
+    transform: translateY(0);
+  }
+
+  .hint {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .facts { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+  .fact {
+    flex: 1;
+    min-width: 150px;
+    background: #f4f1ea;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid #e8e2d6;
+  }
+  .fact b { display: block; color: #7a5c10; font-size: 1.5rem; }
+
+  .sources {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <h1>🏛️ Prunksaal der Österreichischen Nationalbibliothek</h1>
+  <p class="subtitle">Wien, Österreich · Einer der schönsten historischen Bibliotheken der Welt</p>
+
+  <!-- Foto 1: Hero -->
+  <div class="card">
+    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1513523282461-79d9840713f2?q=80&w=1200&auto=format&fit=crop');"></div>
+    <p>Der <strong>Prunksaal</strong> wurde zwischen 1723 und 1726 erbaut. Er ist fast 80 Meter lang, ~20 Meter hoch und beherbergt rund 200.000 historische Bücher sowie vier monumentale venezianische Globen.</p>
+    <p>Die prächtige Kuppel mit Fresken, die vier venezianischen Globen und die historische Büchersammlung machen den Saal zu einem Highlight jeder Wien-Reise.</p>
+  </div>
+
+  <!-- Foto 2: Architektur -->
+  <div class="card">
+    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1507842217267-2a222147568f?q=80&w=1200&auto=format&fit=crop');"></div>
+    <h2 style="color:#7a5c10; margin-bottom:1rem;">Architektur & Geschichte</h2>
+    <p>Der Barocksaal zählt zum UNESCO-Welterbe. Die Deckenfresken und die vier großen Globen sind weltberühmt.</p>
+  </div>
+
+  <!-- 3D-Tour Button -->
+  <div class="tour-box">
+    <h2>🖥️ Interaktive 3D-Tour</h2>
+    <p>Erkunde den Prunksaal virtuell – direkt hier im selben Tab (kein neues Fenster).</p>
+    <a href="https://discover.matterport.com/space/Kw1j2Ph76p2" class="btn-tour">
+      ▶ 3D-Tour starten
+    </a>
+    <p class="hint">Klicke auf den Button. Die Tour öffnet sich in diesem Browser-Tab.</p>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><b>~80 m</b>Länge</div>
+    <div class="fact"><b>~20 m</b>Höhe</div>
+    <div class="fact"><b>200.000+</b>Bücher</div>
+    <div class="fact"><b>4</b>Globen</div>
+  </div>
+
+  <div class="sources">
+    Quellen: Österreichische Nationalbibliothek (onb.ac.at), Matterport 3D-Tour
+  </div>
+
+<script>
+  /* Einfacher Parallax-Effekt: Fotos bewegen sich leicht beim Scrollen */
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    document.querySelectorAll('.photo').forEach(photo => {
+      const speed = 0.3;
+      const y = scrollY * speed;
+      photo.style.backgroundPosition = `center ${50 - y * 0.1}%`;
+    });
+  });
+</script>
+
+</body>
+</html>
